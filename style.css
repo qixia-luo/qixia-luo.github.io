@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.toggle {
+    font-size: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    position: fixed;
+    transition: transform 0.3s ease;
+}
+
+.toggle:hover {
+    transform: scale(1.2);
+}
+
+:root {
+    --primary-color: #1e2121 ;
+    --secondary-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: max(100%, 100vh);
+    z-index: 0;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+body.show-nav {
+    transform: translateX(200px);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('mountain2.jpg');
+    background-size: cover;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    opacity: 0.2; /* translucent image */
+    z-index: -1; /* behind everything */
+}
+
+nav {
+    background-color: var(--primary-color);
+    border-right: 2px solid var(--secondary-color);
+    color: #fff;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 200px;
+    height: max(100%, 100vh);
+    z-index: 100;
+    transform: translateX(-100%);
+}
+
+nav .logo {
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav .logo img {
+    border-radius: 50%;
+    width: 125px;
+    height: auto;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    border-botttom: 2px solid var(--primary-color);
+    padding: 40px;
+    padding-left: 40px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100vh; 
+    padding: 40px 40px;
+}
+
+.intro-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 700px; /* Make it taller */
+    box-sizing: border-box;
+  }
+
+
+.intro-content .me img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro-text {
+    max-width: 1000px;
+    /* line-height: 1.2; */
+    font-size: 20px;
+}
+
+.inline-photo {
+    float: left; 
+    width: 300px;
+    height: 300px;
+    padding: 20px 20px;
+    margin: 0 20px 10px 0;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(0%);
+}
