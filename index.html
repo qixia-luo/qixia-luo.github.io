@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Qixia Luo" />
+  <meta name="description" content="Personal website of Qixia Luo." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="4nYNR90GbycUIwelrzsO3QL8GiH3gH9HZpCAT1DRmPg" />
+  <title>Qixia Luo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <div class="site-id">
+      <a href="#home" class="site-name" data-tab-link="home">Qixia Luo</a>
+      <p>PhD Student in Applied Mathematics at UBC</p>
+    </div>
+
+    <nav class="tabs" aria-label="Page sections">
+      <button class="tab-link active" type="button" data-tab="home" aria-controls="home" aria-selected="true">
+        Home
+      </button>
+      <button class="tab-link" type="button" data-tab="finite-frames" aria-controls="finite-frames" aria-selected="false">
+        Finite Frames SRP 2026
+      </button>
+      <a class="tab-link tab-anchor" href="./cv.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </aside>
+
+  <main class="page-shell">
+    <section id="home" class="tab-panel active" aria-labelledby="home-tab">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">About</p>
+          <h1>Qixia Luo</h1>
+        </div>
+      </header>
+
+      <div class="content-stack about-text">
+        <img src="me.jpeg" alt="A picture of Qixia Luo" class="portrait portrait-inline" />
+        <p>
+          I am currently a PhD student in the
+          <a href="https://www.math.ubc.ca/" target="_blank" rel="noopener">Department of Mathematics</a>
+          and the
+          <a href="https://www.iam.ubc.ca" target="_blank" rel="noopener">Institute of Applied Mathematics</a>
+          at
+          <a href="https://www.ubc.ca" target="_blank" rel="noopener">The University of British Columbia</a>
+          in beautiful Vancouver, British Columbia. I am working with
+          <a href="https://personal.math.ubc.ca/~erobeva/" target="_blank" rel="noopener">Prof. Elina Robeva</a>
+          on algebraic statistics and mathematical questions related to data science.
+        </p>
+
+        <p>
+          In July, 2025, I obtained my MSc from the
+          <a href="https://www.queensu.ca/mathstat/" target="_blank" rel="noopener">Department of Mathematics and Statistics</a>
+          at
+          <a href="https://www.queensu.ca" target="_blank" rel="noopener">Queen's University at Kingston</a>,
+          where I worked with
+          <a href="https://mast.queensu.ca/~mingo/" target="_blank" rel="noopener">Prof. James A. Mingo</a>
+          on free probability and random matrix theory.
+        </p>
+
+        <p>
+          In June, 2022, I obtained my Honours BSc from the
+          <a href="https://www.mathematics.utoronto.ca/" target="_blank" rel="noopener">University of Toronto</a>,
+          where I graduated with honours and high distinction in mathematics and statistics.
+        </p>
+      </div>
+    </section>
+
+    <section id="finite-frames" class="tab-panel" aria-labelledby="finite-frames-tab">
+      <header class="section-heading">
+        <p class="eyebrow">Summer Reading Program</p>
+        <h1>Finite Frames SRP 2026</h1>
+      </header>
+
+      <div class="content-stack">
+        <p>
+          This page is reserved for material, schedule, and other information for the Finite Frames SRP 2026 project. 
+        </p>
+        <p>
+          The Summer Reading Program (SRP) at UBC is a program for undergraduate students who are interested in learning a topic in math beyond the standard undergraduate curriculum. Each summer, selected undergraduate students are matched with mentors who are graduate students or postdoctoral researchers at UBC. For more information, see <a href="https://sites.google.com/view/ubc-math-srp/about" target="_blank" rel="noopener">UBC MATH SRP</a>.  
+        </p>
+        <hr>
+        <p>
+          This summer, I have decided to create a group to learn about <i>finite frames</i>, which is a fascinating area of mathematics that lies at the intersection of several areas of math that is currently undergoing active research, with exciting applications to many areas such as signal processing, quantum information theory, and data science, to name a few. 
+        </p>
+        <p>
+          The reason for the focus on <i>finite</i> frames is twofold. 
+        </p>
+        <ol>
+          <li>In practical applications, we always work with finite-dimensional spaces.</li>
+          <li>Since functional analysis is not a prerequisite for participation in this reading program (participants are in years 1-3 of their undergraduate studies), studying frames in the finite dimensional setting is the accessible way to introduce them to this subject.</li>
+        </ol>
+        <p>
+          Despite the restriction to the simplified finite-dimensional setting, we will still be able to go surprisingly far. After we learn about the basics of finite frame theory, we will already be ready to explore recently resolved problems such as the Paulsen Conjecture as well as open problems such as Zauner's Conjecture. 
+          The participants will write a report or do a presentation on a cutting-edge topic at the end of the program. 
+        </p>
+
+        <p>The basic content of the reading program will be guided by the following two books:</p>
+        <ol>
+          <li><i>Frames for Undergraduates (Han, Kornelson, Larson, Weber, 2007)</i></li>
+          <li><i>Finite Frames: Theory and Applications (Casazza, Kutyniok, 2013)</i></li>
+        </ol>
+
+        <div class="project-card">
+          <h2>Schedule</h2>
+          <ul>
+            <li>
+              <b>Week 1</b> <br>
+              Reading: Sections 3.1, 3.2 and 3.3 in <i>Frames for Undergraduates</i>
+              <ul>
+                <li><b>June 1:</b> Introductions. Overview and expectations of the SRP. Review of linear algebra concepts (hilbert spaces, bases, orthonormal bases). Motivation of the study of frames. Definition of a frame. Equivalent deinfitions of a frame in finite dimensions. First examples of frames (including the Mercedes-Benz frame).</li>
+                <li><b>June 5:</b> Parseval frames. Dual frames and the reconstruction formula. The synthesis, analysis, and frame operators. Redundancy. </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
